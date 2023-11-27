@@ -28,11 +28,6 @@ def generate_launch_description():
 
     export_gazebo_model_path= SetEnvironmentVariable(name='GAZEBO_MODEL_PATH', value='$GAZEBO_MODEL_PATH:ros2 pkg prefix turtlebot3_gazebo /share/turtlebot3_gazebo/models/')
 
-    world = os.path.join(
-        get_package_share_directory('gazebo_turtlebot_controller'),
-        'worlds/walker_world.world'
-    )
-
     turtlebot_world = IncludeLaunchDescription(PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('turtlebot3_gazebo'),'launch'), '/turtlebot3_world.launch.py']) )
 
     controller_node = Node(
