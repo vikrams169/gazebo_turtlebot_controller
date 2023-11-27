@@ -63,7 +63,7 @@ This can be self-verified as well by running the following command in the highes
 # Install Cpplint(ignore if already installed):
   sudo apt install cpplint
 # Go to the package in the workspace
-  cd ~/[ros2_ws]/src/beginners_tutorials
+  cd ~/[ros2_ws]/src/gazebo_turtlebot_controller
 # Self-check Google code style conformity using Cpplint:
   cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order src/*.cpp
 ```
@@ -78,7 +78,7 @@ This can be self-verified as well by running the following command in the highes
 # Install Cppcheck (ignore if already installed):
   sudo apt install cppcheck
 # Go to the package in the workspace
-  cd ~/[ros2_ws]/src/beginners_tutorials
+  cd ~/[ros2_ws]/src/gazebo_turtlebot_controller
 # Self-check the static code analysis using Cppcheck:
   cppcheck --enable=all --std=c++11 --std=c++17 --enable=information --check-config --suppress=missingInclude --suppress=*:*test*/ --suppress=unmatchedSuppression $( find . -name *.cpp | grep -vE -e "^./build/")
 ```
