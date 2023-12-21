@@ -1,8 +1,5 @@
 # gazebo_turtlebot_controller
 
-## Vikram Setty (119696897)
-Deliverables for the ROS 2 Programming Assignment 'Working with Gazebo' assignment as a part of the course ENPM808X at the University of Maryland.
-
 ### Overview
 This project/package allows you to use ROS2 to simulate a robot (Turtlebot 3) that avoids hitting obstacles in its spawned world (for this package, the `turtlebot3_gazebo` world). On sensing an obstacle in front of it in close vicinity, the Turtlebot would turn. In all other scenarios, it would continue to go straight with a constant velocity.
 
